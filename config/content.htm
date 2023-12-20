@@ -308,7 +308,10 @@ doc["threejsblock"].bind("click", threejsblock.do)
 <p><span>輸入問題二: 假如前面程式中的座位號第一個 index 代表"列"而第二個 index 代表行, 請延續上個程式, 由左到右作為每一列的順序, 而且希望陣列排序是列出該位置上的學員學號。</span></p>
 <p><span>ChatGPT回覆二: 如果你希望根據座位號的列和行來排序學號，可以稍微修改程式碼以處理這一需求。這個修改版的程式碼會將座位號的列和行轉換為整數，然後根據列和行的順序進行排序。最後，列印排序後的學號和座位號。以下是修改後的程式碼：</span></p>
 <p><span><img alt="" height="414" src="/images/圖3.png" width="337"/></span></p>
-<p></p>
+<p><span></span></p>
+<p><span>輸入問題三: 假如 "2b_w12_seat.txt" 可以從 "https://mde.tw/cadnote/downloads/2b_w12_seat.txt" 這個網址讀取, 而且希望將上一個 Python 程式改用 Brython 編寫, 要如何修改?</span></p>
+<p><span>ChatGPT回覆三: Brython（Browser Python）是一個允許在瀏覽器中運行 Python 代碼的工具。要將之前的 Python 程式改用 Brython 編寫，首先確保你的瀏覽器支援 Brython。這個 HTML 文件包含了 Brython 的引入，並使用 <code>&lt;script type="text/python"&gt;</code><span> 塊嵌入了 Python 代碼。注意，由於使用 fetch 從網路中獲取檔案，因此需要考慮可能的跨域問題。在實際應用中，你可能需要處理跨域問題，例如使用CORS（跨來源資源共享）。此外，請確保在運行 Brython 之前已經載入了所需的 Brython 腳本。在這個例子中，我使用了 jsdelivr CDN 上的 Brython 腳本。為了避免這些問題，我們可以使用 JavaScript 來在瀏覽器中讀取檔案，然後將檔案內容傳遞給 Brython。然後可以使用以下的範例程式碼：</span></span></p>
+<p><span><span>(因為我們不使用 ChatGPT 混用 Javascript 與 Brython 的建立, 所以此地不列出其回覆的原始碼)</span></span></p>
 <hr/>
 <p>
 <script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
